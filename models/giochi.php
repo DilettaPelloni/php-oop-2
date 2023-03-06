@@ -27,7 +27,7 @@ class Giochi extends Prodotti{
     }
     public function getDaEsterno() {
         if($this->daEsterno) {
-            return "Utilizzabile solo all'esterno"
+            return "Utilizzabile solo all'esterno";
         }
         return "Per esterni ed inetrni";
     }
@@ -35,11 +35,13 @@ class Giochi extends Prodotti{
     //metodi
     public function print() {
         parent::print();
+        echo "<ul>";
         echo "<li>";
         echo "<strong>Materiale: </strong>".$this->getMateriale();
         echo "</li>";
         echo "<li>";
         echo "<strong>Utilizzo: </strong>".$this->getDaEsterno();
         echo "</li>";
+        echo "</ul>";
     }
 }

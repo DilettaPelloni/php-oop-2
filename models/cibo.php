@@ -37,6 +37,7 @@ class Cibo extends Prodotti{
 
     //metodi
     public function print() {
+        echo "<ul>";
         parent::print();
         echo "<li>";
         echo "<strong>Consistenza: </strong>".$this->getConsistenza();
@@ -47,5 +48,6 @@ class Cibo extends Prodotti{
         echo "<li>";
         echo "<strong>Peso: </strong>".$this->getPeso()." g";
         echo "</li>";
+        echo "</ul>";
     }
 }

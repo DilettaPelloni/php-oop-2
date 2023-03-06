@@ -32,11 +32,13 @@ class Cucce extends Prodotti{
     //metodi
     public function print() {
         parent::print();
+        echo "<ul>";
         echo "<li>";
         echo "<strong>Materiale: </strong>".$this->getMateriale();
         echo "</li>";
         echo "<li>";
         echo "<strong>Dimensioni: </strong>".$this->getCapienza();
         echo "</li>";
+        echo "</ul>";
     }
 }

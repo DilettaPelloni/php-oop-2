@@ -13,5 +13,14 @@
     </head>
     <body>
         <h1>PHP OOP 2</h1>
+
+        <h2>Cibo</h2>
+        <ul>
+            <?php foreach ($arrayCibo as $cibo) {?>
+                <li>
+                    <?php echo $cibo->print(); ?>
+                </li>
+            <?php } ?>
+        </ul>
     </body>
 </html>
