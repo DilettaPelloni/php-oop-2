@@ -22,5 +22,25 @@
                 </li>
             <?php } ?>
         </ul>
+
+        <h2>Cucce</h2>
+        <ul>
+            <?php foreach ($arrayCucce as $cuccia) {?>
+                <li>
+                    <?php echo $cuccia->print(); ?>
+                </li>
+            <?php } ?>
+        </ul>
+
+        <h2>Giochi</h2>
+        <ul>
+            <?php foreach ($arrayGiochi as $gioco) {?>
+                <li>
+                    <?php echo $gioco->print(); ?>
+                </li>
+            <?php } ?>
+        </ul>
+
+
     </body>
 </html>

@@ -34,8 +34,8 @@ class Giochi extends Prodotti{
 
     //metodi
     public function print() {
-        parent::print();
         echo "<ul>";
+        parent::print();
         echo "<li>";
         echo "<strong>Materiale: </strong>".$this->getMateriale();
         echo "</li>";
