@@ -38,7 +38,7 @@
                 <!-- fine stampa con metodo -->
                 <div class="row py-4">
                     <?php foreach ($arrayCibo as $cibo) {?>
-                        <div class="col-3 d-flex">
+                        <div class="mb-5 col-lg-3 col-md-6 col d-flex">
                             <div class="card">
                             <span class="position-absolute top-0 end-0 translate-middle py-2 badge rounded-pill bg-success">
                                 <?php echo $cibo->getCategIcona() ?>
@@ -98,7 +98,7 @@
                 <!-- fine stampa con metodo -->
                 <div class="row py-4">
                     <?php foreach ($arrayCucce as $cuccia) {?>
-                        <div class="col-3 d-flex">
+                        <div class="mb-5 col-lg-3 col-md-6 col d-flex">
                             <div class="card">
                             <span class="position-absolute top-0 end-0 translate-middle py-2 badge rounded-pill bg-success">
                                 <?php echo $cuccia->getCategIcona() ?>
@@ -154,7 +154,7 @@
                 <!-- fine stampa con metodo -->
                 <div class="row py-4">
                     <?php foreach ($arrayGiochi as $gioco) {?>
-                        <div class="col-3 d-flex">
+                        <div class="mb-5 col-lg-3 col-md-6 col d-flex">
                             <div class="card">
                             <span class="position-absolute top-0 end-0 translate-middle py-2 badge rounded-pill bg-success">
                                 <?php echo $gioco->getCategIcona() ?>
