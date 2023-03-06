@@ -27,28 +27,25 @@ class Prodotti {
     }
 
     //getters
-    protected function getTipo() {
+    public function getTipo() {
         return $this->tipo;
     }
-    protected function getNome() {
+    public function getNome() {
         return $this->nome;
     }
-    protected function getPrezzo() {
+    public function getPrezzo() {
         return $this->prezzo;
     }
-    protected function getDisp() {
-        if($this->disp) {
-            return 'Si';
-        }
-        return 'No';
+    public function getDisp() {
+        return $this->disp;
     }
-    protected function getCategIcona() {
+    public function getCateg() {
+        return $this->categ;
+    }
+    public function getCategIcona() {
         return $this->categ->getIcona();
     }
-    protected function getCategNome() {
-        return $this->categ->getNome();
-    }
-    protected function getImgPath() {
+    public function getImgPath() {
         return $this->imgPath;
     }
 
@@ -68,7 +65,7 @@ class Prodotti {
         echo "<strong>Prezzo: </strong>".$this->getPrezzo();
         echo "</li>";
         echo "<li>";
-        echo "<strong>Disponibile: </strong>".$this->getDisp();
+        echo "<strong>Disponibile: </strong>".$this->getDisp() ? 'Disponibile' : 'Non disponibile';
         echo "</li>";
     }
 }
