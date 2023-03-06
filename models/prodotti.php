@@ -37,12 +37,38 @@ class Prodotti {
         return $this->prezzo;
     }
     protected function getDisp() {
-        return $this->disp;
+        if($this->disp) {
+            return 'Si';
+        }
+        return 'No';
     }
-    protected function getCateg() {
-        return $this->categ;
+    protected function getCategIcona() {
+        return $this->categ->getIcona();
+    }
+    protected function getCategNome() {
+        return $this->categ->getNome();
     }
     protected function getImgPath() {
         return $this->imgPath;
+    }
+
+
+    //metodi
+    protected function print(){
+        echo "<li>";
+        echo "<strong>Categoria: </strong>".$this->getCategIcona();
+        echo "</li>";
+        echo "<li>";
+        echo "<strong>".$this->getNome()."</strong>";
+        echo "</li>";
+        echo "<li>";
+        echo '<img src="'.$this->getImgPath().'" alt"'.$this->getNome().'"/>';
+        echo "</li>";
+        echo "<li>";
+        echo "<strong>Prezzo: </strong>".$this->getPrezzo();
+        echo "</li>";
+        echo "<li>";
+        echo "<strong>Disponibile: </strong>".$this->getDisp();
+        echo "</li>";
     }
 }

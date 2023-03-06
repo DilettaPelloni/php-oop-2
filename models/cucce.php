@@ -28,4 +28,15 @@ class Cucce extends Prodotti{
     public function getCapienza() {
         return $this->capienza;
     }
+
+    //metodi
+    public function print() {
+        parent::print();
+        echo "<li>";
+        echo "<strong>Materiale: </strong>".$this->getMateriale();
+        echo "</li>";
+        echo "<li>";
+        echo "<strong>Dimensioni: </strong>".$this->getCapienza();
+        echo "</li>";
+    }
 }

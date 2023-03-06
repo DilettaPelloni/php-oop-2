@@ -34,4 +34,18 @@ class Cibo extends Prodotti{
     public function getPeso() {
         return $this->peso;
     }
+
+    //metodi
+    public function print() {
+        parent::print();
+        echo "<li>";
+        echo "<strong>Consistenza: </strong>".$this->getConsistenza();
+        echo "</li>";
+        echo "<li>";
+        echo "<strong>Materia Prima: </strong>".$this->getMateriaPrima();
+        echo "</li>";
+        echo "<li>";
+        echo "<strong>Peso: </strong>".$this->getPeso()." g";
+        echo "</li>";
+    }
 }
