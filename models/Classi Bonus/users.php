@@ -39,4 +39,10 @@ class Users {
     public function setCarta($carta) {
         return $this->carta = $carta;
     }
+
+    //metodi
+    public function compra() {
+        //svuoto il carrello
+        $this->carrello->setProdotti([]);
+    }
 }
