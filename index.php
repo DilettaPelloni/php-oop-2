@@ -50,8 +50,12 @@
                                     </h5>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">
+                                            <strong>Tipologia: </strong>
+                                            <?php echo get_class($cibo) ?>
+                                        </li>
+                                        <li class="list-group-item">
                                             <strong>Prezzo: </strong>
-                                            <?php echo $cibo->getPrezzo() ?> €
+                                            <?php echo number_format($cibo->getPrezzo(), 2, ',', '.') ?> €
                                         </li>
                                         <li
                                             class="
@@ -110,8 +114,12 @@
                                     </h5>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">
+                                            <strong>Tipologia: </strong>
+                                            <?php echo get_class($cuccia) ?>
+                                        </li>
+                                        <li class="list-group-item">
                                             <strong>Prezzo: </strong>
-                                            <?php echo $cuccia->getPrezzo() ?> €
+                                            <?php echo number_format($cuccia->getPrezzo(), 2, ',', '.')  ?> €
                                         </li>
                                         <li
                                             class="
@@ -166,8 +174,12 @@
                                     </h5>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">
+                                            <strong>Tipologia: </strong>
+                                            <?php echo get_class($gioco) ?>
+                                        </li>
+                                        <li class="list-group-item">
                                             <strong>Prezzo: </strong>
-                                            <?php echo $gioco->getPrezzo() ?> €
+                                            <?php echo number_format($gioco->getPrezzo(), 2, ',', '.') ?> €
                                         </li>
                                         <li
                                             class="
