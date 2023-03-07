@@ -1,9 +1,10 @@
 <?php
 
 require_once __DIR__.'/prodotti.php';
+require_once __DIR__.'/haMateriale.php';
 
 class Giochi extends Prodotti{
-    private $materiale;
+    use HaMateriale;
     private $daEsterno;
 
     function __construct(

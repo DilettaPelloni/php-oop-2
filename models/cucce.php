@@ -1,9 +1,10 @@
 <?php
 
 require_once __DIR__.'/prodotti.php';
+require_once __DIR__.'/haMateriale.php';
 
 class Cucce extends Prodotti{
-    private $materiale;
+    use HaMateriale;
     private $capienza;
 
     function __construct(
