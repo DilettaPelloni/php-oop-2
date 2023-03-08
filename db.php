@@ -112,6 +112,9 @@ try {
 //In alternativa posso fare una funzione "crea prodotto" per ogni tipologia di prodotto, che fa "try&catch" mentre crea il prodotto.
 //Non so se questa cosa è una porcata però, quindi nel dubbio lascio così
 
+//Nota per me stessa
+//La soluzione suggerita da Alessio è: creo un array di array. Ogni array contiene i dati del prodotto che voglio creare e la sua classe. Poi ci faccio un foreach che fa try and catch e crea i prodotti uno a uno (in uno switch per scegliere la classe giusta)
+
 
 //filtro prodotti per ottenere gli array delle categorie
 $arrayCibo = array_filter($prodotti, fn($prodotto) => get_class($prodotto) == 'Cibo');
